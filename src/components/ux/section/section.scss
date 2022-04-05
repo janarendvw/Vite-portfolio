@@ -1,8 +1,9 @@
 @import '../../../utils/color-schemes.module.scss';
 .section{
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 100px 0px;
 }

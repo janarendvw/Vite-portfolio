@@ -1,0 +1,17 @@
+@import '../../../utils/color-schemes.module.scss';
+.title{
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    display: block;
+    font-size: 40pt;
+ }
+.title::after{
+            content: '';
+            display: block;
+            width: 4rem;
+            height: 5px;
+            background-color: $cta-light;
+    }
+

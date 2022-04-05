@@ -39,7 +39,7 @@ $phone-width: 768px;
     background-color: $cta-light;
 
 }
-@media (max-width: #{$phone-width}) {
+@media (max-width: 900px) {
 .socials{
     flex-direction: row;
     left: 15px;

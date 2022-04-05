@@ -1,0 +1,23 @@
+
+@import '../../../utils/color-schemes.module.scss';
+.ux-btn{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: solid 2px $cta-light;
+    color: $cta-light;
+    font-size: 15pt;
+    font-weight: 600;
+    text-align: center;
+    /* margin: auto; */
+    margin-right: 20px;
+    border-radius: 5px;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.ux-btn:hover{
+    background-color: $cta-light;
+    color: $primary-light;
+    cursor: pointer;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

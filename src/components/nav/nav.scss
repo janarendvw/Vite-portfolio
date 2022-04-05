@@ -1,0 +1,18 @@
+.nav{
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 254;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    #menu-btn{
+        margin: auto;
+        position: absolute;
+        color: white;
+        right: 50px;
+        transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        z-index: 254;
+    }
+}

@@ -1,0 +1,16 @@
+@import '../../utils/color-schemes.module.scss';
+.bottom-bar{
+    pointer-events: none;
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, $primary-light 50%, $primary-light 100%);
+    z-index: 254;
+}
+@media (min-width: 900px) {
+.bottom-bar{
+    display: none;
+}
+}

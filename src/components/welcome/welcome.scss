@@ -1,0 +1,35 @@
+@import '../../utils/color-schemes.module.scss';
+#welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    color: $heading-light;
+    z-index: 252;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    text-align: center;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    align-content: center;
+    justify-content: space-around;
+    line-height: 2cm;
+    p{
+        color: $p-light;
+        font-weight: bold;
+        font-size: 15pt;
+    }
+    h1{
+        font-size: 60pt;
+        margin: 0;
+        padding: 0;
+    }
+}
+#welcome:hover{
+    color: black;
+}

@@ -1,0 +1,28 @@
+$cursorsize: 8px; 
+$light1: #fff;
+#cursor{
+    width: $cursorsize;
+    height: $cursorsize;
+    position:fixed;
+    background-color: $light1;
+    border-radius: 50%;
+    opacity: 90%;
+    z-index: 255;
+    pointer-events: none;
+  
+
+}
+    
+#tail{
+    box-shadow: 0px 0px 15px 1px #fff;
+    position:fixed;
+    width: 18px;
+    height: 18px ;
+    border: solid thin $light1;
+    transform: translate(-6px,-6px);
+    border-radius: 50%;
+    opacity: 60%;
+    z-index: 255;
+    pointer-events: none;
+  
+}

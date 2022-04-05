@@ -1,0 +1,9 @@
+
+.canvas{
+    height: 100vh!important;
+    position: inherit;
+    overflow: scroll!important;
+}
+::-webkit-scrollbar{
+    display: none;
+}

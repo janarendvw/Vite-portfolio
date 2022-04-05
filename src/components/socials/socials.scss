@@ -1,0 +1,59 @@
+$phone-width: 768px;
+@import "../../utils/color-schemes.module.scss";
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: fixed;
+    z-index: 254;
+    left: 1rem;
+    font-size: 1.4rem;
+    bottom: 50%;
+    transform: translateY(50%);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    a{
+        color: $cta-light;
+        transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    a:hover{
+        color: $cta-light-hvr;
+        transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+}
+
+.socials::after{
+
+        content: '';
+        width: 2px;
+        height: 2rem;
+        background-color: $cta-light;
+    
+}
+.socials::before{
+
+    content: '';
+    width: 2px;
+    height: 2rem;
+    background-color: $cta-light;
+
+}
+@media (max-width: #{$phone-width}) {
+.socials{
+    flex-direction: row;
+    left: 15px;
+    bottom: 16px;
+    a:hover{
+        color: $cta-light-hvr;
+    }
+
+}
+.socials::after{
+display: none;
+}
+.socials::before{
+    display: none;
+}
+
+}

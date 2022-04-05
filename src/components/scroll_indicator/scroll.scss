@@ -1,0 +1,62 @@
+@import "../../utils/color-schemes.module.scss";
+
+.mouse-scroll{
+    display: flex;
+    background: none;
+    color: $cta-light;
+    cursor: pointer;
+    width: 2.1em;
+    height: 4em;
+    border: solid 2px $cta-light;
+    border-radius: 30px;
+    position: fixed;
+    z-index: 254;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,-50px);
+    background-color: $primary-light;
+    transition: 1s cubic-bezier(.18,-0.11,0,1.65);
+    pointer-events: none;
+}
+.mouse-scroll:hover{
+    background: $cta-light;
+    color: $primary-light;
+}
+.up-arrow{
+    margin: auto;
+    display: none;
+
+}
+.slider{
+    content: '';
+    width: 0.3em;
+    height: 0.3em;
+    border-radius: 30px;
+    background-color: $cta-light;
+    position: inherit;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    animation: scroll 1s infinite forwards;
+}
+@keyframes scroll {
+    0%{
+        bottom: 90%;
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+        height: 1em;
+    }
+    100%{
+        bottom: 30%;
+        opacity: 0;
+        height: 0.5em;
+    }
+    
+}
+@media (max-width: 900px) {
+    .mouse-scroll{
+        bottom: 0;
+    }
+    
+}

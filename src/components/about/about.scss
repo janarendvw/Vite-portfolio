@@ -1,0 +1,63 @@
+@import '../../utils/color-schemes.module.scss';
+.about{
+    display: flex;
+    align-items: center;
+}
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    height: 600px;
+    width: 90%;
+    .about-picture{
+        margin: 40px auto;
+        height: 200px;
+        width: 500px;
+        background-image: url('../../assets/pictures/undraw_hello_re_3evm.svg');
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    .about-text{
+        padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        font-size: 1.3rem;
+        margin: auto;
+        width: 60%;
+        // min-width: 500px;
+        height: 100%;
+
+
+    }
+}
+.title{
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    display: block;
+    font-size: 40pt;
+ }
+.title::after{
+            content: '';
+            display: block;
+            width: 4rem;
+            height: 5px;
+            background-color: $cta-light;
+    }
+
+
+@media (max-width: 900px) {
+        .about-text{
+            width: 100%!important;
+            padding: 0px;
+        }
+        .about-content{
+            width: 100%;
+            
+        }
+        
+    }

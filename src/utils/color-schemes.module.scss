@@ -1,0 +1,22 @@
+//background
+$primary-light: #E4E9EC;
+//elements
+$secondary-light:#E2CEC3;
+//call to action
+$cta-light: #ff0037;
+//hover
+$cta-light-hvr: #ff818b;
+//emphasis
+$ctr-light: #6833FD;
+$heading-light: #3d3d3d;
+$p-light: #3d3d3d;
+//construction
+$xyz: #fffb0085;
+:export {
+primaryLight:$primary-light;
+secondaryLight:$secondary-light;
+ctaLight:$cta-light;
+ctrLight:$ctr-light;
+headingLight:$heading-light;
+pLight:$p-light;
+  }

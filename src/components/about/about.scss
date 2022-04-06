@@ -2,22 +2,15 @@
 .about{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
 }
 .about-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: auto;
-    height: 600px;
-    width: auto;
-    .about-picture{
-        margin: 40px auto;
-        height: 200px;
-        width: 400px;
-        background-image: url('../../assets/pictures/undraw_hello_re_3evm.svg');
-        background-size:contain;
-        background-repeat: no-repeat;
-    }
+    justify-content: space-around;
+    width: 50%;
     .about-text{
         padding: 0px 40px;
         display: flex;
@@ -32,15 +25,27 @@
 
     }
 }
+.about-picture{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    background-image: url('../../assets/pictures/undraw_instant_analysis_re_mid5.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
 
     @media (max-width: 900px) {
         .about{
             .about-picture{
+                display: none;
+            }
+            .about-content{
+                width: auto;
             }
             .about-text{
                 width: 90vw;
             
-                padding: 20px;
+                padding: 0px;
             }
         
         }

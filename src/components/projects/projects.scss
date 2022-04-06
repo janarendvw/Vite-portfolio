@@ -1,0 +1,22 @@
+@import '../../utils/color-schemes.module.scss';
+
+.projects{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    .projects-text{
+        max-width: 1600px;
+        width: 90%;
+        font-size: 1.3rem;
+    }
+    .projects-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-evenly;
+        margin: 50px;
+        width: 90%;
+    }
+}

@@ -6,7 +6,7 @@ import { angleToRadians } from "../../../utils/angle";
 import * as THREE from "three";
 import variables from '../../../utils/color-schemes.module.scss';
 export default function Box(){
-    console.log(typeof variables.primaryLight);
+    console.log(typeof variables.primary);
     const orbitControlsRef = useRef(null);
     useFrame((state) => {
         if (orbitControlsRef.current) {
@@ -45,10 +45,10 @@ else{
             distort={0.46}
             color={variables.pLight}/>
         </mesh>
-        <fog attach="fog" color={variables.primaryLight} near={5} far={7.5} position={[0,0,0]}/>
+        <fog attach="fog" color={variables.secondary} near={5} far={7.5} position={[0,0,0]}/>
         <mesh position={[0,0,0]}>
-        <pointLight color={variables.secondaryLight} intensity={5} position={[0,0,1]} />
-        <ambientLight color={'white'} intensity={3} />
+        <pointLight color={variables.cta} intensity={0.3} position={[0,0,1]} />
+        <ambientLight color={variables.secondary} intensity={0.5} />
         </mesh>
         </>
     )

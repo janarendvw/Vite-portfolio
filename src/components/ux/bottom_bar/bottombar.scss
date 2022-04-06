@@ -1,0 +1,16 @@
+@import '../../../utils/color-schemes.module.scss';
+.bottom-bar{
+    pointer-events: none;
+    width: 100vw;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    background: $primary;
+    z-index: 254;
+    box-shadow: 0px 0px 10px -4px #00000060;
+}
+@media (min-width: 900px) {
+.bottom-bar{
+    display: none;
+}
+}

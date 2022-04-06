@@ -14,8 +14,7 @@ export default function welcome() {
     return (
         <><div id='welcome'>
           <p>Hi, welcome to my</p>
-          <h1>Portfolio</h1
-          ></div> </>
+          <h1>Portfolio</h1></div> </>
       
     )
   }

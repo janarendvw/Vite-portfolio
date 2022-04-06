@@ -8,7 +8,7 @@
     margin: auto;
     text-align: center;
     position: absolute;
-    color: $heading-light;
+    color: $text;
     z-index: 252;
     top: 45%;
     left: 50%;
@@ -20,7 +20,7 @@
     justify-content: space-around;
     line-height: 2cm;
     p{
-        color: $p-light;
+        color: $text;
         font-weight: bold;
         font-size: 15pt;
     }

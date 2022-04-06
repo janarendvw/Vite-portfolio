@@ -15,9 +15,10 @@ import {
 import { BlendFunction, Resizer, KernelSize } from 'postprocessing'
 import Section from "./components/ux/section/Section";
 import { Suspense } from "react";
-import BottomBar from "./components/bottom_bar/BottomBar";
+import BottomBar from "./components/ux/bottom_bar/BottomBar";
 import ProgressBar from "./components/ux/progress_bar/ProgressBar";
 import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
 
 function Loader() {
   const { progress } = useProgress()
@@ -44,6 +45,7 @@ export default function App() {
       </Canvas>
       <Section content={<About/>}/>
       <Section content={<Skills/>}/>
+      <Section content={<Projects/>}/>
     </>
   );
 }

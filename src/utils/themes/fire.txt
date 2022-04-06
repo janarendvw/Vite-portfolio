@@ -1,9 +1,9 @@
-$primary: #201e22;
-$cta: #ffffff;
+$primary: #1b050e;
+$cta: #fddbae;
 $cta-hvr: #ff818b;
-$secondary: #fffb00;
+$secondary: #ff4f4f;
 $text: #e9f0fa;
-$progressbar: #8383831c;
+$progressbar: #83838346;
 
 
 $ctr2-light: #F2612F;

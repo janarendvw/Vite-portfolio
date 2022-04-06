@@ -1,6 +1,7 @@
 import React from 'react';
 import './scroll.scss';
 import { FaChevronUp } from 'react-icons/fa'
+import variables from '../../utils/color-schemes.module.scss'
 export default function Scroll() {
 
     window.onscroll = function() {myFunction()};
@@ -9,13 +10,16 @@ export default function Scroll() {
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
         const sI =  document.querySelector(".mouse-scroll");
-        if(scrolled > 0){
+        if(scrolled > 5){
             document.querySelector(".slider").style.display = 'none';
              document.querySelector(".up-arrow").style.display = 'block';
             sI.style.height = '2.1em';
             sI.style.width = '4em';
             sI.style.pointerEvents= "unset";
             sI.style.bottom = "-45px";
+            sI.style.borderRadius= '2px';
+            sI.style.backgroundColor= variables.cta;
+            sI.style.color= variables.primary;
         }
         else{
             document.querySelector(".slider").style.display = 'block';
@@ -24,8 +28,9 @@ export default function Scroll() {
             sI.style.width = '2.1em';
             sI.style.pointerEvents= "none";
             sI.style.bottom = "20px";
-            // sI.setAttribute('style', 'transform: translate(-50%, -50px);');
-           
+            sI.style.borderRadius= '30px';
+            sI.style.backgroundColor= variables.primary; // sI.setAttribute('style', 'transform: translate(-50%, -50px);');
+            sI.style.color= variables.cta;
         }
         // document.querySelector(".mouse-scroll").innerHTML = scrolled;
     }

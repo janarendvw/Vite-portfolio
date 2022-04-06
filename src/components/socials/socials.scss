@@ -13,11 +13,11 @@ $phone-width: 768px;
     transform: translateY(50%);
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     a{
-        color: $cta-light;
+        color: $cta;
         transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
     a:hover{
-        color: $cta-light-hvr;
+        color: $cta-hvr;
         transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
@@ -28,7 +28,7 @@ $phone-width: 768px;
         content: '';
         width: 2px;
         height: 2rem;
-        background-color: $cta-light;
+        background-color: $cta;
     
 }
 .socials::before{
@@ -36,7 +36,7 @@ $phone-width: 768px;
     content: '';
     width: 2px;
     height: 2rem;
-    background-color: $cta-light;
+    background-color: $cta;
 
 }
 @media (max-width: 900px) {
@@ -45,7 +45,7 @@ $phone-width: 768px;
     left: 15px;
     bottom: 16px;
     a:hover{
-        color: $cta-light-hvr;
+        color: $cta-hvr;
     }
 
 }

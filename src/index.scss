@@ -1,8 +1,11 @@
 @import "./utils/color-schemes.module.scss";
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 body {
-  background-color: $primary-light;
+  scroll-behavior: smooth;
+  background-color: $primary;
   margin: 0;
+  color: $text;
   overflow: scroll;
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,10 +19,58 @@ code {
     monospace;
 }
 h1{
-  color: $heading-light;
+  color: $text;
+  font-family: 'Questrial', sans-serif;
+  letter-spacing: 5px;
 }
 em{
   font-style: normal;
   font-weight: bold;
-  color: $ctr-light;
+  color: $secondary;
+}
+a{
+  text-decoration: none;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px dotted $secondary;
+  cursor: pointer;
+}
+.title{
+  font-family: 'Questrial', sans-serif;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: $primary;
+  color: $secondary;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+  transition: 1s;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: $text transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }

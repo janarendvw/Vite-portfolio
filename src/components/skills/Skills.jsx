@@ -1,9 +1,10 @@
 import React from 'react'
 import ProgressBar from '../ux/progress_bar/ProgressBar'
+import variables from '../../utils/color-schemes.module.scss'
 import Title from '../ux/title/Title'
 import './skills.scss'
 import {GrReactjs } from 'react-icons/gr';
-import {SiAdobeaftereffects, SiAdobephotoshop, SiAdobeillustrator, SiNodedotjs, SiSass, SiHtml5, SiThreedotjs, SiPython, SiPhp, SiJavascript, SiMysql} from 'react-icons/si';
+import { SiAdobelightroom, SiAdobeaftereffects, SiAdobephotoshop, SiAdobeillustrator, SiNodedotjs, SiSass, SiHtml5, SiThreedotjs, SiPython, SiPhp, SiJavascript, SiMysql} from 'react-icons/si';
 var icon_1 = <SiHtml5/>;
 var icon_2 = <GrReactjs/>;
 var icon_3 = <SiThreedotjs/>;
@@ -16,6 +17,7 @@ var icon_9 = <SiNodedotjs/>
 var o_icon_1 = <SiAdobeillustrator/>
 var o_icon_2 = <SiAdobeaftereffects/>
 var o_icon_3 = <SiAdobephotoshop/>
+var o_icon4 = <SiAdobelightroom/>
 const prgmLanguages = [
     {
         id: 1,
@@ -90,6 +92,12 @@ const other = [
         icon: o_icon_3,
         skill: 'Photoshop',
         progress: 27
+    },
+    {
+        id: 4,
+        icon: o_icon4,
+        skill: 'Lightroom',
+        progress: 74
     }
 ]
 export default function Skills() {
@@ -102,7 +110,7 @@ export default function Skills() {
                  <span className='tooltiptext'>
                      <code>MySQLi  Express.js  React.js  Node.js</code>
                 </span>
-                </em> stack, using three.js to give websites that cherry on the ice-cream </p>
+                </em> stack, using three.js to give websites that icing on the cake. My python and machine learning knowledge mainly come from udemy courses, and I have made an online book store for my dad using <em>SQLi</em>, <em>HTML</em> and <em>PHP</em>, which is displayed under the <a href='#projects'><em style={{color: variables.cta}}>Projects</em></a> tab.  </p>
         </div>
         <div className='skills-img'></div>
         <div className='skill-type'>Programming languages</div>
@@ -129,7 +137,6 @@ export default function Skills() {
         );
     })
 }
-<ProgressBar/>
             </div>
     </div>
   )

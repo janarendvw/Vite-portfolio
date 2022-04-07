@@ -7,11 +7,10 @@ const defaultIcon = <SiVisualstudiocode/>
 export default function ProgressBar(props) {
     const barStyle = {
         width: props.percent + '%',
-        backgroundColor: props.color
     }
   return (
     <div className='progress-bar'>
-        <div className='icon'  style={{color: barStyle.backgroundColor}}>{props.icon}</div>
+        <div className='icon'>{props.icon}</div>
         <div className='content'>
             <div className='progress-title'  style={{color: barStyle.backgroundColor}}>
                 {props.name}
@@ -28,6 +27,5 @@ export default function ProgressBar(props) {
 ProgressBar.defaultProps = {
     icon: defaultIcon,
     percent: 49,
-    name: 'placeholder',
-    color: variables.secondary
+    name: 'placeholder'
 }

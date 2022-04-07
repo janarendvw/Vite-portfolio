@@ -35,6 +35,7 @@ export default function Scroll() {
         // document.querySelector(".mouse-scroll").innerHTML = scrolled;
     }
     function topFunction() {
+      navigator.vibrate(20);
       window.scrollTo({top: 0, behavior: 'smooth'});
     }
   return (

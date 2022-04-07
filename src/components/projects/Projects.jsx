@@ -2,13 +2,41 @@ import React from 'react'
 import Title from '../ux/title/Title'
 import './projects.scss'
 import Project from './Project'
+
+import { SiGithub, SiWordpress, SiReact, SiAdobeaftereffects, SiAdobephotoshop, SiAdobeillustrator, SiNodedotjs, SiSass, SiHtml5, SiThreedotjs, SiPython, SiPhp, SiJavascript, SiMysql} from 'react-icons/si';
+import Button from '../ux/button/Button';
+const t = {
+  react: <SiReact/>,
+  nodejs: <SiNodedotjs/>,
+  wordpress: <SiWordpress/>,
+  html: <SiHtml5/>,
+  threejs: <SiThreedotjs/>,
+  sass: <SiSass/>,
+  php: <SiPhp/>,
+  pSourceCode: <Button content={<SiGithub/>} link={'https://github.com/PluginDev-A/Vite-portfolio'}/>
+}
 const projectList = [
   {
     id: 1,
     title: 'Metis green',
-    img: 'proj_1',
-    url: 'https://metis-green.nl/#home'
-  }
+    img: 'url(\'/src/components/projects/metis-green.png\')',
+    url: 'https://metis-green.nl/#home',
+    tech: [t.wordpress, t.html, t.php]
+  },
+  {
+    id:2,
+    title: 'Portfolio Website',
+    img: 'url(\'/src/components/projects/portfolio.png\')',
+    url: '#',
+    tech: [t.pSourceCode,t.react, t.nodejs, t.threejs, t.sass]
+  },
+    {
+    id:3,
+    title: 'Atlas Sales Agency',
+    img: 'url(\'/src/components/projects/atlas.png\')',
+    url: 'https://atlas-sales-agency.nl',
+    tech: [t.wordpress, t.php, t.html]
+    }
 ]
 export default function Projects() {
   return (
@@ -19,9 +47,9 @@ export default function Projects() {
         </div>
       <div className='projects-container'>
 {
-  projectList.map(({id, title, img, url}) =>{
+  projectList.map(({id, title, img, url, tech}) =>{
     return(
-      <Project key={id} title={title} image={img} url={url}/>
+      <Project key={id} title={title} image={img} url={url} tech={tech}/>
     )
   })
 }

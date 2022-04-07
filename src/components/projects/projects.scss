@@ -8,15 +8,24 @@
     align-items: center;
     .projects-text{
         max-width: 1600px;
-        width: 90%;
+        width: 80%;
         font-size: 1.3rem;
     }
     .projects-container{
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 50px 0px;
         justify-content: space-evenly;
         margin: 50px;
         width: 90%;
     }
+}
+@media (max-width: 900px) {
+    .projects{
+  
+        .projects-text{
+            width: 100%;
+        }
+    }
+    
 }

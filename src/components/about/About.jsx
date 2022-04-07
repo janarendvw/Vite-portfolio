@@ -15,8 +15,8 @@ export default function About() {
            I am a 21 year old aspiring full-stack developer
             with a big interest in UX/UI design.</p>
             <div>
-        <Button content='Let&#39;s talk' link={'mailto:janarendvw@gmail.com'}/>
-        <Button content='Resume &nbsp; ' link={'#'} icon={<BsFileEarmarkPdfFill/>}/>
+        <Button invert content='Let&#39;s talk' link={'mailto:janarendvw@gmail.com'}/>
+        <Button invert content='Resume &nbsp; ' link={'#'} icon={<BsFileEarmarkPdfFill/>}/>
         </div>
         </div>
         </div>

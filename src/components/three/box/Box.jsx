@@ -6,7 +6,6 @@ import { angleToRadians } from "../../../utils/angle";
 import * as THREE from "three";
 import variables from '../../../utils/color-schemes.module.scss';
 export default function Box(){
-    console.log(typeof variables.primary);
     const orbitControlsRef = useRef(null);
     useFrame((state) => {
         if (orbitControlsRef.current) {

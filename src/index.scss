@@ -1,6 +1,10 @@
 @import "./utils/color-schemes.module.scss";
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
+:root{
+  scroll-behavior: smooth!important;
+  -webkit-tap-highlight-color: transparent!important;
+}
 body {
   scroll-behavior: smooth;
   background-color: $primary;

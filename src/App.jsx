@@ -43,9 +43,9 @@ export default function App() {
       <OrbitControls enabled={false}/>
         </Suspense>
       </Canvas>
-      <Section content={<About/>}/>
+      <Section content={<About/>} id={'about'}/>
       <Section content={<Skills/>}/>
-      <Section content={<Projects/>}/>
+      <Section content={<Projects/>} id={'projects'}/>
     </>
   );
 }

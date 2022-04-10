@@ -10,7 +10,6 @@ const projectImage = {
   backgroundSize:  'cover',
   backgroundPosition: 'center'
 }
-console.log(props.image);
   return (
     <div className='project'>
         <div className='project-title'> {props.title}</div>

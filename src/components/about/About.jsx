@@ -1,12 +1,29 @@
 import React from 'react'
 import './about.scss'
+import { Canvas } from 'react-three-fiber';
+import Cube from '../three/box/Cube';
 import Button from '../ux/button/Button'
 import Title from '../ux/title/Title';
 import {BsFileEarmarkPdfFill} from 'react-icons/bs';
+import { ChromaticAberration, Bloom , Glitch, Scanline} from '@react-three/postprocessing';
+import { EffectComposer } from '@react-three/postprocessing';
+import { KernelSize, GlitchMode, BlendFunction } from 'postprocessing'
 export default function About() {
   return (
     <div className='about'>
-      <div className='about-picture'></div>
+      <div className='about-picture'><Canvas>
+        {/* <EffectComposer multisampling={0} disableNormalPass={true}>
+        <Glitch
+        delay={[3, 10]}
+        duration={[0.6, 1.0]}
+        strength={[0.1, 0.3]}
+        columns={0}
+        mode={GlitchMode.SPORADIC} // try CONSTANT_MILD
+        active // toggle on/off
+        ratio={0.01}
+      />
+        </EffectComposer> */}
+        <Cube/></Canvas></div>
         <div className='about-content'>
         
         <div className='about-text'>

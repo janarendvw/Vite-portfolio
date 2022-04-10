@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="theme-color" content="#011d2e"/>
+    <link rel="manifest" href="/manifest.json">
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icons/apple-icon-180.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" href="/src/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Stckd</title>
   </head>
   <body>
     <div id="root">
     </div>
     <script type="module" src="/src/index.jsx"></script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+                 .register('/sw.js')
+                 .then(function() { console.log("Service Worker Registered"); });
+      }
+      </script>
   </body>
 </html>

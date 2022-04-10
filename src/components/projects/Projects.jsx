@@ -12,7 +12,9 @@ const t = {
   html: <SiHtml5/>,
   threejs: <SiThreedotjs/>,
   sass: <SiSass/>,
+  sql: <SiMysql/>,
   php: <SiPhp/>,
+  js: <SiJavascript/>,
   pSourceCode: <Button content={<SiGithub/>} link={'https://github.com/PluginDev-A/Vite-portfolio'}/>
 }
 const projectList = [
@@ -36,6 +38,13 @@ const projectList = [
     img: 'url(\'/src/components/projects/atlas.png\')',
     url: 'https://atlas-sales-agency.nl',
     tech: [t.wordpress, t.php, t.html]
+    },
+    {
+      id:4,
+      title: 'Universalis',
+      img: 'url(\'/src/components/projects/universalis.png\')',
+      url: 'https://universalisboeken.nl',
+      tech: [t.html, t.php, t.sql, t.js]
     }
 ]
 export default function Projects() {
@@ -43,7 +52,11 @@ export default function Projects() {
     <div className='projects'>
       <div className='projects-text'>
         <Title content={'Projects'}/>
-        <p>Lorem ipsum, dolornt sit fuga ex saepe tm voluptatem suscipit, illum omnis consectetur non impedit dolor et nulla ipsum beatae corporis vero temporibus porro repellat deserunt vitae. Dolor voluptatibus, sint dolore necessitatibus eius in error earum ratione veniam quam reprehenderit sit omnis consequatur nobis illum vel doloribus, saepe maiores cum voluptate! Reprehenderit iste laborum adipisci, a, deserunt dignissimos vel cupiditate totam ab ullam, repellendus necessitatibus asperiores.</p>
+        <p>I have mostly made front-end applications, like the websites listed below.
+          My first big project was an online book store for my dad, made with only <em>HTML</em>, <em>CSS</em>, <em>SQL</em>, and a little <em>JavaScript</em>.
+          Because there are over 2000 books in the database, I have done my fair share of research into <em>NLP</em> and data-optimalisation. However, the styling was made 2 years ago with little 
+           knowledge of <em>CSS</em>, making the website look a bit dated.
+        </p>
         </div>
       <div className='projects-container'>
 {

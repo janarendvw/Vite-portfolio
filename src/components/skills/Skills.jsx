@@ -2,9 +2,11 @@ import React from 'react'
 import ProgressBar from '../ux/progress_bar/ProgressBar'
 import variables from '../../utils/color-schemes.module.scss'
 import Title from '../ux/title/Title'
+import Cube from '../three/box/Cube'
 import './skills.scss'
 import {GrReactjs } from 'react-icons/gr';
 import { SiAdobelightroom, SiAdobeaftereffects, SiAdobephotoshop, SiAdobeillustrator, SiNodedotjs, SiSass, SiHtml5, SiThreedotjs, SiPython, SiPhp, SiJavascript, SiMysql} from 'react-icons/si';
+import { Canvas } from 'react-three-fiber'
 var icon_1 = <SiHtml5/>;
 var icon_2 = <GrReactjs/>;
 var icon_3 = <SiThreedotjs/>;
@@ -103,6 +105,7 @@ const other = [
 export default function Skills() {
   return (
     <div className='skills'>
+        <div className='skills-content'>
         <div className='skills-text'>
             <Title content={'Skills'}/>
             <p>Recently I have been working mainly within the&nbsp;
@@ -110,9 +113,21 @@ export default function Skills() {
                  <span className='tooltiptext'>
                      <code>MySQLi  Express.js  React.js  Node.js</code>
                 </span>
-                </em> stack, using three.js to give websites that icing on the cake. My python and machine learning knowledge mainly come from udemy courses, and I have made an online book store for my dad using <em>SQLi</em>, <em>HTML</em> and <em>PHP</em>, which is displayed under the <a href='#projects'><em style={{color: variables.cta}}>Projects</em></a> tab.  </p>
+                </em> stack, using three.js to give websites
+                 that icing on the cake.
+                  My python and machine 
+                  learning knowledge mainly
+                   come from udemy courses, 
+                   and I have made an online book store for my 
+                   dad using <em>SQLi</em>, <em>HTML</em> and 
+                   <em> PHP</em>, which is displayed under the 
+                   <a href='#projects'><em style={{color: variables.cta}}> Projects</em></a> tab.  </p>
+                    
         </div>
-        <div className='skills-img'></div>
+        <div className='skills-img'>
+            <Canvas>
+            <Cube/>
+            </Canvas></div></div>
         <div className='skill-type'>Programming languages</div>
         <div className='skills-progress'>
             

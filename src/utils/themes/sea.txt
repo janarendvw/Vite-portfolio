@@ -1,7 +1,7 @@
 $primary: #011d2e;
 $cta: #98e7ff;
 $cta-hvr: #ff818b;
-$secondary: #87accf;
+$secondary: #56a2e9;
 $text: #e9f0fa;
 
 $progressbar: #83838346;

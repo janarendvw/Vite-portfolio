@@ -8,16 +8,22 @@
     align-items: center;
     .projects-text{
         max-width: 1600px;
-        width: 80%;
+        width: 800px;
         font-size: 1.3rem;
+        margin-bottom: 100px;
+        .title{
+            text-align: center;
+        }
+        .tilte::after{
+            display: none;
+        }
     }
     .projects-container{
+        width: 95vw;;
         display: flex;
         flex-wrap: wrap;
-        gap: 50px 0px;
         justify-content: space-evenly;
-        margin: 50px;
-        width: 90%;
+        gap: 60px;
     }
 }
 @media (max-width: 900px) {

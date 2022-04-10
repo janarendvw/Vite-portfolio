@@ -10,23 +10,33 @@ import About from "./components/about/About";
 import { OrbitControls } from "@react-three/drei";
 import {
   EffectComposer,
-  Bloom
+  Bloom,
+  Glitch,
+  Scanline
 } from "@react-three/postprocessing";
-import { BlendFunction, Resizer, KernelSize } from 'postprocessing'
+import { BlendFunction, Resizer, KernelSize, GlitchMode } from 'postprocessing'
 import Section from "./components/ux/section/Section";
 import { Suspense } from "react";
 import BottomBar from "./components/ux/bottom_bar/BottomBar";
 import ProgressBar from "./components/ux/progress_bar/ProgressBar";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
-
+import Logo from "./components/ux/logo/Logo";
+import ModeSwitch from "./components/ux/light_dark_mode/ModeSwitch";
+import { darkTheme, lightTheme } from './utils/Theme'
 function Loader() {
   const { progress } = useProgress()
   return <Html center>{progress} % loaded</Html>
 }
+
+
 export default function App() {
+  console.log(darkTheme.primary);
   return (
     <>
+
+    {/* <Logo/> */}
+    {/* <ModeSwitch/> */}
     <BottomBar/>
     <Scroll/>
 <Welcome/>
@@ -36,7 +46,7 @@ export default function App() {
 
             <Suspense fallback={<Loader/>}>
           <EffectComposer multisampling={0} disableNormalPass={true} >
-
+          
       </EffectComposer>
       <Box />
       

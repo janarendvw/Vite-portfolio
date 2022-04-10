@@ -5,9 +5,6 @@ $secondary: #3d4494;
 $text: #241e1e;
 $progressbar: #7c84ac50;
 
-
-$ctr2-light: #F2612F;
-
 //construction
 $xyz: #fffb0085;
 :export {
